@@ -6,7 +6,7 @@ import (
     "net/http"
     "os"
     "time"
-    "string"
+    "strings"
     "github.com/jackc/pgx/v5/pgxpool"
 
     "moviehub/auth"
