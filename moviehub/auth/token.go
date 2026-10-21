@@ -37,7 +37,7 @@ func (i *Issuer) Parse(tokenString string) (int64, string, error) {
     var c Claims
     _, err := jwt.ParseWithClaims(tokenString, &c,
         func(t *jwt.Token) (any, error) { return i.Secret, nil },
-        jwt.WithValidMethods([]string{"HS256"}),
+       // jwt.WithValidMethods([]string{"HS256"}),
         jwt.WithExpirationRequired(),
     )
     if err != nil {
