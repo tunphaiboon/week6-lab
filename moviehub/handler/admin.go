@@ -1,3 +1,5 @@
+
+package handler
 type roleReq struct {
     Role string `json:"role"`
 }
